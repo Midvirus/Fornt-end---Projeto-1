@@ -1,4 +1,3 @@
-
 :root{
   --forest-green: #2c6b3f;
   --olive: #7f9742;
@@ -23,7 +22,6 @@ body{
   padding:0 1rem;
 }
 
-/* Header */
 .site-header{
   max-width:1100px;
   margin:1rem auto;
@@ -43,7 +41,6 @@ body{
 }
 .icon-leaf{width:38px;height:38px;color:var(--olive)}
 
-/* Navigation */
 .top-nav, .main-nav{display:flex;align-items:center;gap:1rem}
 .top-nav a, .main-nav a{
   text-decoration:none;
@@ -54,7 +51,6 @@ body{
 }
 .top-nav a:hover, .main-nav a:hover{background:rgba(47,79,47,0.06)}
 
-/* Intro banner */
 .intro-banner{
   max-width:1100px;
   margin:1rem auto;
@@ -83,7 +79,6 @@ body{
 }
 .intro-image figcaption{font-size:.85rem;color:var(--muted);margin-top:.4rem}
 
-/* Catalog */
 .catalog-section{
   max-width:1100px;
   margin:1.25rem auto;
@@ -116,7 +111,6 @@ body{
 .benefits{margin:0;padding-left:1.25rem;color:var(--muted)}
 .tree-card:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(34,60,30,0.15)}
 
-/* Aside notes */
 .catalog-notes{
   margin-top:1rem;
   max-width:1100px;
@@ -127,7 +121,6 @@ body{
   color:var(--muted);
 }
 
-/* Auth forms layout */
 .auth-main{
   max-width:1100px;
   margin:1rem auto;
@@ -192,7 +185,6 @@ body{
 }
 .toggle-link{color:var(--muted);font-size:.95rem;text-decoration:underline;margin-left:auto}
 
-/* Footer */
 .site-footer{
   max-width:1100px;
   margin:2rem auto;
@@ -205,7 +197,6 @@ body{
 .team-links{display:flex;gap:.8rem;align-items:center}
 .team-links a{color:var(--forest-green);text-decoration:none;font-weight:600}
 
-/* Responsive */
 @media (max-width:980px){
   .grid-catalog{grid-template-columns: repeat(2, 1fr)}
   .intro-banner{grid-template-columns:1fr}
@@ -218,5 +209,111 @@ body{
   .site-header{padding:0 0}
 }
 
-/* Small utilities */
 .muted{color:var(--muted);font-size:.95rem}
+
+#cabecalho-principal {
+  border-top: 4px solid var(--forest-green);
+  padding-top: 1rem;
+}
+
+a[target="_blank"] {
+  font-weight: bold; 
+}
+
+.team-links a:hover, 
+.top-nav a:hover, 
+.main-nav a:hover,
+.toggle-link:hover {
+  color: var(--olive);
+  text-decoration: underline; 
+}
+
+.legenda-estilizada {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.rodape-creditos {
+  text-decoration: overline;
+  padding-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+#cabecalho-principal {
+  background: linear-gradient(180deg, rgba(44, 107, 63, 0.12), rgba(255, 255, 255, 0.9));
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin: 1rem auto 1.25rem;
+  max-width: 1100px;
+}
+
+#cabecalho-principal h1,
+.secao-titulo {
+  color: var(--forest-green);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.secao-curriculo {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--card-shadow);
+}
+
+.secao-curriculo p,
+.secao-curriculo li,
+.secao-curriculo dd,
+.contato-info {
+  color: var(--muted);
+}
+
+.contato-info a,
+footer a {
+  color: var(--forest-green);
+  font-weight: 600;
+}
+
+.contato-info a:hover,
+footer a:hover {
+  color: var(--olive);
+}
+
+.ods-container {
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ods-container img {
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  background: #fff;
+}
+
+.lista-habilidades,
+.lista-hobbies {
+  padding-left: 1.3rem;
+}
+
+.lista-educacao {
+  margin: 0;
+}
+
+footer {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 1rem 1.15rem;
+  border-top: 3px solid var(--olive);
+  color: var(--muted);
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
