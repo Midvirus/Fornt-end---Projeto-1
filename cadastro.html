@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BioUrbano — Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <svg class="icon-leaf" viewBox="0 0 24 24" aria-hidden="true" role="img"><path fill="currentColor" d="M12 2C9 6 6 9 3 12c3 3 6 6 10 8 4-2 7-5 9-9-3-1-6-4-10-9z"/></svg>
+      <h1>BioUrbano</h1>
+    </div>
+    <nav aria-label="Main navigation" class="top-nav">
+      <a href="index.html">Catálogo</a>
+      <a href="#register">Registrar</a>
+      <a href="#login">Entrar</a>
+      <a class="nav-icon" href="#" title="Mapa">
+        <svg viewBox="0 0 24 24" aria-hidden="true" role="img"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="auth-main">
+    <section id="register" class="card form-card">
+      <header>
+        <h2>Registro de Voluntário</h2>
+        <p class="lead">Junte-se à comunidade e ajude a catalogar árvores urbanas.</p>
+      </header>
+
+      <form class="register-form" action="#" method="post" novalidate>
+        <label for="fullname">Nome completo
+          <input id="fullname" name="fullname" type="text" required placeholder="Seu nome completo">
+        </label>
+
+        <label for="email">Email
+          <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
+        </label>
+
+        <label for="region">Região / Cidade
+          <input id="region" name="region" type="text" required placeholder="Cidade ou bairro">
+        </label>
+
+        <label for="password">Senha
+          <input id="password" name="password" type="password" required placeholder="Crie uma senha">
+        </label>
+
+        <label for="confirm-password">Confirmar senha
+          <input id="confirm-password" name="confirm-password" type="password" required placeholder="Repita a senha">
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn submit-btn">Criar conta</button>
+          <a href="#login" class="toggle-link">Já tem conta? Entrar</a>
+        </div>
+      </form>
+    </section>
+
+    <section id="login" class="card form-card login-card" aria-hidden="false">
+      <header>
+        <h2>Acesso</h2>
+        <p class="lead">Voluntários já cadastrados podem entrar aqui.</p>
+      </header>
+
+      <form class="login-form" action="#" method="post" novalidate>
+        <label for="login-email">Email
+          <input id="login-email" name="login-email" type="email" required placeholder="seu@exemplo.com">
+        </label>
+
+        <label for="login-password">Senha
+          <input id="login-password" name="login-password" type="password" required placeholder="Senha">
+        </label>
+
+        <div class="form-actions">
+          <a class="btn login-link" href="index.html">Entrar</a>
+          <a href="#register" class="toggle-link">Criar nova conta</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 BioUrbano — Projeto acadêmico SDG 15: Life on Land</p>
+    <nav class="team-links" aria-label="Resumes">
+      <span>Equipe:</span>
+      <a href="https://example.com/resume-member1" target="_blank" rel="noopener">Member 1 — CV</a>
+      <a href="https://example.com/resume-member2" target="_blank" rel="noopener">Member 2 — CV</a>
+      <a href="https://example.com/resume-member3" target="_blank" rel="noopener">Member 3 — CV</a>
+    </nav>
+  </footer>
+</body>
+</html>
