@@ -31,7 +31,7 @@
         <p class="lead">Junte-se à comunidade e ajude a catalogar árvores urbanas.</p>
       </header>
 
-      <form class="register-form" action="#" method="post">
+      <form class="register-form" action="#" method="post" onsubmit="if (!this.checkValidity()) { return false; } window.location.href='cadastro.html'; return false;">
         <label for="fullname">Nome completo
           <input id="fullname" name="fullname" type="text" required placeholder="Seu nome completo">
         </label>
