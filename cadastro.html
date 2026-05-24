@@ -31,7 +31,7 @@
         <p class="lead">Junte-se à comunidade e ajude a catalogar árvores urbanas.</p>
       </header>
 
-      <form class="register-form" action="#" method="post" novalidate>
+      <form class="register-form" action="#" method="post">
         <label for="fullname">Nome completo
           <input id="fullname" name="fullname" type="text" required placeholder="Seu nome completo">
         </label>
@@ -41,7 +41,7 @@
         </label>
 
         <label for="region">Região / Cidade
-          <input id="region" name="region" type="text" required placeholder="Cidade ou bairro">
+          <input id="region" name="region" type="text" placeholder="Cidade ou bairro">
         </label>
 
         <label for="password">Senha
@@ -65,7 +65,7 @@
         <p class="lead">Voluntários já cadastrados podem entrar aqui.</p>
       </header>
 
-      <form class="login-form" action="#" method="post" novalidate>
+      <form class="login-form" action="#" method="post" onsubmit="if (!this.checkValidity()) { return false; } window.location.href='index.html'; return false;">
         <label for="login-email">Email
           <input id="login-email" name="login-email" type="email" required placeholder="seu@exemplo.com">
         </label>
@@ -75,7 +75,7 @@
         </label>
 
         <div class="form-actions">
-          <button type="submit" class="btn login-link" onclick="window.location.href='index.html'; return false;">Entrar</button>
+          <button type="submit" class="btn login-link">Entrar</button>
           <a href="#register" class="toggle-link">Criar nova conta</a>
         </div>
       </form>
